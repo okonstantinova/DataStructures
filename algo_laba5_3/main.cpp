@@ -25,13 +25,15 @@ node* tail = NULL;
 unsigned int hash(char x[21])
 {
     unsigned int h = 0;
+    unsigned int p_i = 1;
     for (int i = 0; i < 21; i++)
     {
         if (x[i] == '\0')
         {
             break;
         }
-        h += x[i];
+        h = h + x[i] * p_i;
+        p_i = p_i * p;
     }
     return h % size;
 }

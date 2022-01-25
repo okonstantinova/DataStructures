@@ -14,7 +14,7 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - name: Делаем pull проекта из репозитория
+    - name: Делаем pull проекта из репозитория/Удаляем клонированный репозиторий
       uses: actions/checkout@v2
 
     - name: Конфигурируем построение CMake

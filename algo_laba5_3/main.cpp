@@ -167,7 +167,7 @@ node* prev(char x[21])
 }
 
 int main() {
-    FILE* fin = fopen("linkedmap.in", "r"); //открытие файла для чтение
+    FILE* fin = fopen("linkedmap.in", "r");
     FILE* fout = fopen("linkedmap.out", "w"); //открытие файла для записи
 
     char* command = new char[21];
